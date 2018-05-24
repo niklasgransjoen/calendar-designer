@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<string>
+  
+  <!-- Month names -->
+  <january>Januar</january>
+  <february>Februar</february>
+  <march>Mars</march>
+  <april>April</april>
+  <may>Mai</may>
+  <june>Juni</june>
+  <july>Juli</july>
+  <august>August</august>
+  <september>September</september>
+  <october>Oktober</october>
+  <november>November</november>
+  <december>Desember</december>
+  
+  <!-- Days of the week -->
+  <monday>Man</monday>
+  <tuesday>Tir</tuesday>
+  <wednesday>Ons</wednesday>
+  <thursday>Tor</thursday>
+  <friday>Fre</friday>
+  <saturday>Lør</saturday>
+  <sunday>Søn</sunday>
+  
+  <!--Button text-->
+  <toolbarFile>Fil</toolbarFile>
+  <toolbarOpen>Åpne</toolbarOpen>
+  <toolbarSave>Lagre</toolbarSave>
+  <toolbarSaveAs>Lagre som...</toolbarSaveAs>
+  <toolbarClose>Lukk</toolbarClose>
+
+  <toolbarCalendar>Kalender</toolbarCalendar>
+  
+  <toolbarSettings>Innstillinger</toolbarSettings>
+  <toolbarOther>Annet</toolbarOther>
+
+  <export>Eksporter</export>
+  <createCalendar>Opprett kalender</createCalendar>
+  
+  <editCell>Rediger celle</editCell>
+  <copyCell>Kopier forrige</copyCell>
+  <bigText>BigText</bigText>
+  <editSubText>Rediger tillegstekst</editSubText>
+
+  <btnCancel>Avbryt</btnCancel>
+  <btnConfirm>Bekreft</btnConfirm>
+  
+  <!-- Pop-up text-->
+  <continue>Vil du fortsette?</continue>
+  <unsavedChanges>Du har ulagrede endringer som vil gå tapt!</unsavedChanges>
+  <saveFirst>Vil du lagre før du åpner ny fil?</saveFirst>
+  <writeToFileError>Noe gikk galt ved skriving til fil. Se error: </writeToFileError>
+  <readFileError>Noe gikk galt ved lesing av fil. Se error: </readFileError>
+  <invalidFormat>Ugyldig filformat</invalidFormat>
+  <invalidFile>Filen du prøver å åpne er ugyldig. Er filen lagret med en tidligere versjon av Kalenderdesigner?</invalidFile>
+  
+  <!-- Header text-->
+  <mainformHeader>Kalenderdesigner</mainformHeader>
+  <editCellHeader>Rediger arrangement</editCellHeader>
+  <changenotes>Changenotes</changenotes>
+  <warning>Advarsel</warning>
+  <error>Error</error>
+  
+  <!-- Settings -->
+  <settingsHeader>Innstillinger</settingsHeader>
+  <settingsEventsHeader>Arrangementer</settingsEventsHeader>
+  <settingsUse>Bruk innstillinger</settingsUse> <!-- "Use settings"-->
+  <settingsAlways>Alltids</settingsAlways> <!-- Always -->
+  <settingsNAlways>Bare på denne kalenderen</settingsNAlways> <!-- Just on this calendar -->
+  <settingsTextcolor>Tekstfarge</settingsTextcolor>
+  <settingsGray>Grå</settingsGray>
+  <settingsBlack>Svart</settingsBlack>
+  <settingsLine>Linje </settingsLine>
+  
+  <!-- Tips -->
+  <holdShiftTip>Hold shift-tasten for å markere flere celler.</holdShiftTip> <!-- Hold the shift key to mark multiple cells -->
+  
+  <!-- Business info or similar -->
+  <title>i Solveigs Stue</title> <!-- Title will be [monthName] + this info -->
+  <businessInfo1>Jektvikveien 104, Grønøy</businessInfo1> <!-- Address -->
+  <businessInfo2>phonenumber</businessInfo2> <!-- Phone number -->
+  <businessInfo3>post@solveigsstue.no</businessInfo3> <!-- Email address -->
+  <businessInfo4>solveigsstue.no</businessInfo4> <!-- Website -->
+
+  <!-- Other -->
+  <settingsFilename>\\.kalenderdesign_settings.txt</settingsFilename>
+  <pluralEnding>r</pluralEnding> <!--The ending of plural nouns-->
+
+</string>
