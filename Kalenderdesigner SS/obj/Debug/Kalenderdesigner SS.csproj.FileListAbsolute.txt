@@ -11,3 +11,15 @@ C:\Users\Niklas\Dropbox\Annet\Prosjekter\Programmering\Visual Studio Projects\Ka
 C:\Users\Niklas\Dropbox\Annet\Prosjekter\Programmering\Visual Studio Projects\Kalenderdesigner SS\Kalenderdesigner SS\obj\Debug\Kalenderdesigner SS.pdb
 C:\Users\Niklas\Dropbox\Annet\Prosjekter\Programmering\Visual Studio Projects\Kalenderdesigner SS\Kalenderdesigner SS\obj\Debug\Kalenderdesigner_SS.SubtextEdit.resources
 C:\Users\Niklas\Dropbox\Annet\Prosjekter\Programmering\Visual Studio Projects\Kalenderdesigner SS\Kalenderdesigner SS\obj\Debug\Kalenderdesigner SS.csprojAssemblyReference.cache
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\bin\Debug\Kalenderdesigner SS.exe.config
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\bin\Debug\Kalenderdesigner SS.exe
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\bin\Debug\Kalenderdesigner SS.pdb
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\obj\Debug\Kalenderdesigner_SS.DateEdit.resources
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\obj\Debug\Kalenderdesigner_SS.Form1.resources
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\obj\Debug\Kalenderdesigner_SS.Properties.Resources.resources
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\obj\Debug\Kalenderdesigner_SS.Settings.resources
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\obj\Debug\Kalenderdesigner_SS.SubtextEdit.resources
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\obj\Debug\Kalenderdesigner SS.csproj.GenerateResource.cache
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\obj\Debug\Kalenderdesigner SS.csproj.CoreCompileInputs.cache
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\obj\Debug\Kalenderdesigner SS.exe
+C:\Users\Niklas\Documents\Git\calendar-designer\Kalenderdesigner SS\obj\Debug\Kalenderdesigner SS.pdb

@@ -180,7 +180,7 @@ namespace Kalenderdesigner_SS
             Brush gray = Brushes.Gray;
             Brush white = Brushes.White;
 
-            string headline = Global.monthStr + Global.GetText("title");
+            string headline = Global.monthStr + " " + Global.GetText("title");
             Point headlinePos = new Point((width + cornerX * 2) / 2, cornerY);
             g.DrawString(headline, ssFont, black, headlinePos, sf);
 
