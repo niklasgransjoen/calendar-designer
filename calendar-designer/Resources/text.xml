@@ -80,7 +80,7 @@
   <!-- Business info or similar -->
   <title>i Solveigs Stue</title> <!-- Title will be [monthName] + this info -->
   <businessInfo1>Jektvikveien 104, Grønøy</businessInfo1> <!-- Address -->
-  <businessInfo2>phonenumber</businessInfo2> <!-- Phone number -->
+  <businessInfo2>+47 91 24 36 05</businessInfo2> <!-- Phone number -->
   <businessInfo3>post@solveigsstue.no</businessInfo3> <!-- Email address -->
   <businessInfo4>solveigsstue.no</businessInfo4> <!-- Website -->
 
