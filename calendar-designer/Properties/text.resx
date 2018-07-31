@@ -117,41 +117,172 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="add_text_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\icons\add-text-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="bigtext_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\icons\bigtext-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnConfirm" xml:space="preserve">
+    <value>Confirm</value>
   </data>
-  <data name="changenotes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\changenotes.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="error" xml:space="preserve">
+    <value>Error</value>
   </data>
-  <data name="copy_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\icons\copy-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="January" xml:space="preserve">
+    <value>January</value>
   </data>
-  <data name="edit_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\icons\edit-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="February" xml:space="preserve">
+    <value>February</value>
   </data>
-  <data name="edit_text_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\icons\edit-text-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="March" xml:space="preserve">
+    <value>March</value>
   </data>
-  <data name="Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="April" xml:space="preserve">
+    <value>April</value>
   </data>
-  <data name="open_file_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\icons\open-file-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="May" xml:space="preserve">
+    <value>May</value>
   </data>
-  <data name="save_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\icons\save-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="June" xml:space="preserve">
+    <value>June</value>
   </data>
-  <data name="settings_icons" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\icons\settings-icons.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="July" xml:space="preserve">
+    <value>July</value>
   </data>
-  <data name="ssFont" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\candlescript demo version.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="August" xml:space="preserve">
+    <value>August</value>
   </data>
-  <data name="ssLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\solveigs stue logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="September" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="November" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="Gray" xml:space="preserve">
+    <value>Gray</value>
+  </data>
+  <data name="Black" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Mon</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Tue</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Wed</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Thu</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Fri</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Sat</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveAs" xml:space="preserve">
+    <value>Save as...</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="CreateCalendar" xml:space="preserve">
+    <value>Create Calendar</value>
+  </data>
+  <data name="EditCell" xml:space="preserve">
+    <value>Edit cells</value>
+  </data>
+  <data name="CopyPrev" xml:space="preserve">
+    <value>Copy previous</value>
+  </data>
+  <data name="BigText" xml:space="preserve">
+    <value>BigText</value>
+  </data>
+  <data name="EditSubText" xml:space="preserve">
+    <value>Edit subtext</value>
+  </data>
+  <data name="PopupContinue" xml:space="preserve">
+    <value>Do you wish to continue?</value>
+  </data>
+  <data name="PopupUnsaved" xml:space="preserve">
+    <value>You have unsaved changes that will be lost!</value>
+  </data>
+  <data name="PopupSaveFirst" xml:space="preserve">
+    <value>Save before continuing?</value>
+  </data>
+  <data name="PopupInvalidVersion" xml:space="preserve">
+    <value>The file you are trying to open is not compatiple with this version of the software.</value>
+  </data>
+  <data name="CalendarDesigner" xml:space="preserve">
+    <value>Calendar designer</value>
+  </data>
+  <data name="EditEvent" xml:space="preserve">
+    <value>Edit event</value>
+  </data>
+  <data name="Changenotes" xml:space="preserve">
+    <value>Changenotes</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Events" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="Line" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="Textcolor" xml:space="preserve">
+    <value>Text color</value>
+  </data>
+  <data name="Always" xml:space="preserve">
+    <value>Always</value>
+  </data>
+  <data name="NAlways" xml:space="preserve">
+    <value>Just for this calendar</value>
+  </data>
+  <data name="UseSettings" xml:space="preserve">
+    <value>Use settings</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="TipHoldShift" xml:space="preserve">
+    <value>Hold the SHIFT key to select multiple cells.</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="Norwegian" xml:space="preserve">
+    <value>Norwegian</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
   </data>
 </root>

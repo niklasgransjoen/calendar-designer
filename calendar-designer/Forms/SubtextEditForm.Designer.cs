@@ -1,6 +1,8 @@
-﻿namespace Kalenderdesigner_SS
+﻿using CalendarDesigner.Properties;
+
+namespace CalendarDesigner
 {
-    partial class SubtextEdit
+    partial class SubtextEditForm
     {
         /// <summary>
         /// Required designer variable.
@@ -54,7 +56,7 @@
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(75, 23);
             this.btnConfirm.TabIndex = 2;
-            this.btnConfirm.Text = Global.GetText("btnConfirm");
+            this.btnConfirm.Text = text.btnConfirm;
             this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
@@ -64,7 +66,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = Global.GetText("btnCancel");
+            this.btnCancel.Text = text.btnCancel;
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -83,7 +85,7 @@
             this.Name = "SubtextEdit";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = Global.GetText("editSubText");
+            this.Text = text.EditSubText;
             this.ResumeLayout(false);
             this.PerformLayout();
             this.AcceptButton = btnConfirm;

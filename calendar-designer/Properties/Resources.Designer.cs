@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Kalenderdesigner_SS.Properties {
+namespace CalendarDesigner.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Kalenderdesigner_SS.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Kalenderdesigner_SS.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CalendarDesigner.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -142,6 +142,16 @@ namespace Kalenderdesigner_SS.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon Icon {
+            get {
+                object obj = ResourceManager.GetObject("Icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap open_file_icon {
@@ -188,18 +198,6 @@ namespace Kalenderdesigner_SS.Properties {
             get {
                 object obj = ResourceManager.GetObject("ssLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt; 
-        ///&lt;unsavedChanges&gt;
-        ///  string =&quot;Du har ulagrede endringer som vil gå tapt ved oppretting av ny kalender!\n\n Vil du fortsette?&quot;
-        ///&lt;/unsavedChanges&gt;.
-        /// </summary>
-        internal static string text {
-            get {
-                return ResourceManager.GetString("text", resourceCulture);
             }
         }
     }

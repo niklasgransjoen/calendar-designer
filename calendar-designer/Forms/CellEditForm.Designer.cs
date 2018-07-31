@@ -1,6 +1,8 @@
-﻿namespace Kalenderdesigner_SS
+﻿using CalendarDesigner.Properties;
+
+namespace CalendarDesigner
 {
-    partial class DateEdit
+    partial class CellEditForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DateEdit));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CellEditForm));
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -44,7 +46,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = Global.GetText("btnCancel");
+            this.btnCancel.Text = text.btnCancel;
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -54,7 +56,7 @@
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(75, 23);
             this.btnConfirm.TabIndex = 4;
-            this.btnConfirm.Text = Global.GetText("btnConfirm");
+            this.btnConfirm.Text = text.btnConfirm;
             this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
@@ -87,7 +89,7 @@
             this.cbxCopyPrev.Size = new System.Drawing.Size(88, 17);
             this.cbxCopyPrev.TabIndex = 11;
             this.cbxCopyPrev.TabStop = false;
-            this.cbxCopyPrev.Text = Global.GetText("copyCell");
+            this.cbxCopyPrev.Text = text.CopyPrev;
             this.cbxCopyPrev.UseVisualStyleBackColor = true;
             this.cbxCopyPrev.CheckedChanged += new System.EventHandler(this.cbxCopyPrev_CheckedChanged);
             // 
@@ -99,7 +101,7 @@
             this.cbxBigText.Size = new System.Drawing.Size(62, 17);
             this.cbxBigText.TabIndex = 12;
             this.cbxBigText.TabStop = false;
-            this.cbxBigText.Text = Global.GetText("bigText");
+            this.cbxBigText.Text = text.BigText;
             this.cbxBigText.UseVisualStyleBackColor = true;
             this.cbxBigText.CheckedChanged += new System.EventHandler(this.cbxBigText_CheckedChanged);
             // 
@@ -123,7 +125,7 @@
             this.Name = "DateEdit";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = Global.GetText("editCellHeader");
+            this.Text = text.EditCell;
             this.ResumeLayout(false);
             this.PerformLayout();
             this.CancelButton = btnCancel;

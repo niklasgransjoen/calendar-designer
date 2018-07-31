@@ -54,7 +54,7 @@
   <writeToFileError>Noe gikk galt ved skriving til fil. Se error: </writeToFileError>
   <readFileError>Noe gikk galt ved lesing av fil. Se error: </readFileError>
   <invalidFormat>Ugyldig filformat</invalidFormat>
-  <invalidFile>Filen du prøver å åpne er ugyldig. Er filen lagret med en tidligere versjon av Kalenderdesigner?</invalidFile>
+  <invalidVersion>Filen du forsøker å åpne er lagret med en annen versjon av kalenderdesigner, og kan ikke bli lest.</invalidVersion>
   
   <!-- Header text-->
   <mainformHeader>Kalenderdesigner</mainformHeader>
@@ -66,6 +66,7 @@
   <!-- Settings -->
   <settingsHeader>Innstillinger</settingsHeader>
   <settingsEventsHeader>Arrangementer</settingsEventsHeader>
+  <settingsLanguageHeader>Språk</settingsLanguageHeader>
   <settingsUse>Bruk innstillinger</settingsUse> <!-- "Use settings"-->
   <settingsAlways>Alltids</settingsAlways> <!-- Always -->
   <settingsNAlways>Bare på denne kalenderen</settingsNAlways> <!-- Just on this calendar -->
@@ -75,17 +76,9 @@
   <settingsLine>Linje </settingsLine>
   
   <!-- Tips -->
-  <holdShiftTip>Hold shift-tasten for å markere flere celler.</holdShiftTip> <!-- Hold the shift key to mark multiple cells -->
-  
-  <!-- Business info or similar -->
-  <title>i Solveigs Stue</title> <!-- Title will be [monthName] + this info -->
-  <businessInfo1>Jektvikveien 104, Grønøy</businessInfo1> <!-- Address -->
-  <businessInfo2>+47 91 24 36 05</businessInfo2> <!-- Phone number -->
-  <businessInfo3>post@solveigsstue.no</businessInfo3> <!-- Email address -->
-  <businessInfo4>solveigsstue.no</businessInfo4> <!-- Website -->
+  <holdShiftTip>Hold SHIFT-tasten for å markere flere celler.</holdShiftTip> <!-- Hold the shift key to select multiple cells -->
 
   <!-- Other -->
-  <settingsFilename>\\.kalenderdesign_settings.txt</settingsFilename>
   <pluralEnding>r</pluralEnding> <!--The ending of plural nouns-->
 
 </string>

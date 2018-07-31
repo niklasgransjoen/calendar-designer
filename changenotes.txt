@@ -1,0 +1,28 @@
+
+V1.3.0
+	- coming soon
+
+V1.2.1
+	- Bugfixes
+
+V1.2.0
+	- New functions:
+		- Add subtext below the calendar
+		- Toolbar with icons
+		- Other basic functionality
+	- Bugfixes
+
+V1.1.0
+	- New functions:
+		- Save and load calendars
+		- Select and edit multiple cells/dates
+		- Toolbar-functions
+		- Context menu
+		- BigText
+		- Settings
+	- Other changes:
+		- New icon
+		- Fixed pixelated title
+
+V1.0.0
+	- Project release

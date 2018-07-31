@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Kalenderdesigner_SS
+namespace CalendarDesigner
 {
-    internal static class Program
+    public static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -11,10 +11,9 @@ namespace Kalenderdesigner_SS
         [STAThread]
         private static void Main()
         {
-            Startup.LoadFont();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }

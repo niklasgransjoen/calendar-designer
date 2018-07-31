@@ -2,19 +2,23 @@
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace Kalenderdesigner_SS
+namespace CalendarDesigner
 {
-    internal static class Startup
+    public static class Startup
     {
+
+        /// <summary>
+        /// Runs the necessary setup for the software.
+        /// </summary>
         public static void Setup()
         {
             //Title on mainform, format Vx.x
-            Global.mainForm.Text += " V" + Global.version.Substring(0, Global.version.IndexOf(".", Global.version.IndexOf(".") + 1));
+            Global.MainForm.Text += " V" + Global.Version.Substring(0, Global.Version.IndexOf(".", Global.Version.IndexOf(".") + 1));
 
             //Fill comboBoxes
             int year;
-            ComboBox boxMonth = Global.mainForm.cmbBoxMonth;
-            ComboBox boxYear = Global.mainForm.cmbBoxYear;
+            ComboBox boxMonth = Global.MainForm.cmbBoxMonth;
+            ComboBox boxYear = Global.MainForm.cmbBoxYear;
 
             for (int i = 0; i < 5; i++)
             {
@@ -34,11 +38,11 @@ namespace Kalenderdesigner_SS
                 boxYear.Text = (DateTime.Now.Year + 1).ToString();
             }
 
-            Calendar.Setup();
+            new Calendar(true);
         }
 
         /// <summary>
-        /// Load your special font
+        /// Loads your special font.
         /// </summary>
         public static void LoadFont()
         {
@@ -55,7 +59,7 @@ namespace Kalenderdesigner_SS
             Marshal.Copy(fontdata, 0, data, fontLength);
 
             //pass the font to the font collection
-            Global.pfc.AddMemoryFont(data, fontLength);
+            Global.Pfc.AddMemoryFont(data, fontLength);
         }
     }
 }

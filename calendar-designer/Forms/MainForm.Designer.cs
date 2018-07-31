@@ -1,9 +1,10 @@
-﻿using System;
+﻿using CalendarDesigner.Properties;
+using System;
 using System.Windows.Forms;
 
-namespace Kalenderdesigner_SS
+namespace CalendarDesigner
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +32,7 @@ namespace Kalenderdesigner_SS
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.cmbBoxMonth = new System.Windows.Forms.ComboBox();
             this.cmbBoxYear = new System.Windows.Forms.ComboBox();
             this.btnCreate = new System.Windows.Forms.Button();
@@ -74,19 +75,6 @@ namespace Kalenderdesigner_SS
             // 
             this.cmbBoxMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxMonth.FormattingEnabled = true;
-            this.cmbBoxMonth.Items.AddRange(new object[] {
-            Global.GetText("january"),
-            Global.GetText("february"),
-            Global.GetText("march"),
-            Global.GetText("april"),
-            Global.GetText("may"),
-            Global.GetText("june"),
-            Global.GetText("july"),
-            Global.GetText("august"),
-            Global.GetText("september"),
-            Global.GetText("october"),
-            Global.GetText("november"),
-            Global.GetText("december") });
 
             this.cmbBoxMonth.Location = new System.Drawing.Point(15, 53);
             this.cmbBoxMonth.Name = "cmbBoxMonth";
@@ -109,7 +97,7 @@ namespace Kalenderdesigner_SS
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(103, 23);
             this.btnCreate.TabIndex = 3;
-            this.btnCreate.Text = Global.GetText("createCalendar");
+            this.btnCreate.Text = text.CreateCalendar;
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
@@ -119,7 +107,7 @@ namespace Kalenderdesigner_SS
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(75, 23);
             this.btnExport.TabIndex = 4;
-            this.btnExport.Text = Global.GetText("export");
+            this.btnExport.Text = text.Export;
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
@@ -164,15 +152,15 @@ namespace Kalenderdesigner_SS
             this.tsBtnFile.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnFile.Name = "tsBtnFile";
             this.tsBtnFile.Size = new System.Drawing.Size(32, 22);
-            this.tsBtnFile.Text = Global.GetText("toolbarFile");
-            this.tsBtnFile.ToolTipText = Global.GetText("toolbarFile");
+            this.tsBtnFile.Text = text.File;
+            this.tsBtnFile.ToolTipText = text.File;
             // 
             // tsBtnOpen
             // 
             this.tsBtnOpen.Name = "tsBtnOpen";
             this.tsBtnOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.tsBtnOpen.Size = new System.Drawing.Size(163, 22);
-            this.tsBtnOpen.Text = Global.GetText("toolbarOpen");
+            this.tsBtnOpen.Text = text.Open;
             this.tsBtnOpen.Click += new System.EventHandler(this.tsBtnOpen_Click);
             // 
             // tsBtnSave
@@ -180,7 +168,7 @@ namespace Kalenderdesigner_SS
             this.tsBtnSave.Name = "tsBtnSave";
             this.tsBtnSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.tsBtnSave.Size = new System.Drawing.Size(163, 22);
-            this.tsBtnSave.Text = Global.GetText("toolbarSave");
+            this.tsBtnSave.Text = text.Save;
             this.tsBtnSave.Click += new System.EventHandler(this.tsBtnSave_Click);
             // 
             // tsBtnSaveAs
@@ -188,7 +176,7 @@ namespace Kalenderdesigner_SS
             this.tsBtnSaveAs.Name = "tsBtnSaveAs";
             this.tsBtnSaveAs.ShortcutKeys = System.Windows.Forms.Keys.F12;
             this.tsBtnSaveAs.Size = new System.Drawing.Size(163, 22);
-            this.tsBtnSaveAs.Text = Global.GetText("toolbarSaveAs");
+            this.tsBtnSaveAs.Text = text.SaveAs;
             this.tsBtnSaveAs.Click += new System.EventHandler(this.tsBtnSaveAs_Click);
             // 
             // toolStripSeparator3
@@ -201,7 +189,7 @@ namespace Kalenderdesigner_SS
             this.tsBtnExport.Name = "tsBtnExport";
             this.tsBtnExport.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.tsBtnExport.Size = new System.Drawing.Size(163, 22);
-            this.tsBtnExport.Text = Global.GetText("export");
+            this.tsBtnExport.Text = text.Export;
             this.tsBtnExport.Click += new System.EventHandler(this.tsBtnExport_Click);
             // 
             // toolStripSeparator1
@@ -214,7 +202,7 @@ namespace Kalenderdesigner_SS
             this.tsBtnClose.Name = "tsBtnClose";
             this.tsBtnClose.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.tsBtnClose.Size = new System.Drawing.Size(163, 22);
-            this.tsBtnClose.Text = Global.GetText("toolbarClose");
+            this.tsBtnClose.Text = text.Close;
             this.tsBtnClose.Click += new System.EventHandler(this.tsBtnClose_Click);
             // 
             // tsBtnCalendar
@@ -229,34 +217,34 @@ namespace Kalenderdesigner_SS
             this.tsBtnCalendar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnCalendar.Name = "tsBtnCalendar";
             this.tsBtnCalendar.Size = new System.Drawing.Size(66, 22);
-            this.tsBtnCalendar.Text = Global.GetText("toolbarCalendar");
+            this.tsBtnCalendar.Text = text.Calendar;
             // 
             // tsBtnEditCell
             // 
             this.tsBtnEditCell.Name = "tsBtnEditCell";
             this.tsBtnEditCell.Size = new System.Drawing.Size(180, 22);
-            this.tsBtnEditCell.Text = Global.GetText("editCell");
+            this.tsBtnEditCell.Text = text.EditCell;
             this.tsBtnEditCell.Click += new System.EventHandler(this.tsBtnEditCell_Click);
             // 
             // tsBtnCopyCell
             // 
             this.tsBtnCopyCell.Name = "tsBtnCopyCell";
             this.tsBtnCopyCell.Size = new System.Drawing.Size(180, 22);
-            this.tsBtnCopyCell.Text = Global.GetText("copyCell");
+            this.tsBtnCopyCell.Text = text.CopyPrev;
             this.tsBtnCopyCell.Click += new System.EventHandler(this.tsBtnCopyCell_Click);
             // 
             // tsBtnBigText
             // 
             this.tsBtnBigText.Name = "tsBtnBigText";
             this.tsBtnBigText.Size = new System.Drawing.Size(180, 22);
-            this.tsBtnBigText.Text = Global.GetText("bigText");
+            this.tsBtnBigText.Text = text.BigText;
             this.tsBtnBigText.Click += new System.EventHandler(this.tsBtnBigText_Click);
             // 
             // tsBtnEditSubtext
             // 
             this.tsBtnEditSubtext.Name = "tsBtnEditSubtext";
             this.tsBtnEditSubtext.Size = new System.Drawing.Size(180, 22);
-            this.tsBtnEditSubtext.Text = Global.GetText("editSubText");
+            this.tsBtnEditSubtext.Text = text.EditSubText;
             this.tsBtnEditSubtext.Click += new System.EventHandler(this.tsBtnEditSubtext_Click);
             // 
             // tsBtnSettings
@@ -266,7 +254,7 @@ namespace Kalenderdesigner_SS
             this.tsBtnSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSettings.Name = "tsBtnSettings";
             this.tsBtnSettings.Size = new System.Drawing.Size(73, 22);
-            this.tsBtnSettings.Text = Global.GetText("toolbarSettings");
+            this.tsBtnSettings.Text = text.Settings;
             this.tsBtnSettings.Click += new System.EventHandler(this.tsBtnSettings_Click);
             // 
             // tsBtnInfo
@@ -278,13 +266,13 @@ namespace Kalenderdesigner_SS
             this.tsBtnInfo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnInfo.Name = "tsBtnInfo";
             this.tsBtnInfo.Size = new System.Drawing.Size(52, 22);
-            this.tsBtnInfo.Text = Global.GetText("toolbarOther");
+            this.tsBtnInfo.Text = text.Other;
             // 
             // tsBtnChangenotes
             // 
             this.tsBtnChangenotes.Name = "tsBtnChangenotes";
             this.tsBtnChangenotes.Size = new System.Drawing.Size(144, 22);
-            this.tsBtnChangenotes.Text = Global.GetText("changenotes");
+            this.tsBtnChangenotes.Text = text.Changenotes;
             this.tsBtnChangenotes.Click += new System.EventHandler(this.tsBtnChangenotes_Click);
             // 
             // toolStrip2
@@ -308,21 +296,21 @@ namespace Kalenderdesigner_SS
             // tssBtnOpen
             // 
             this.tssBtnOpen.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tssBtnOpen.Image = global::Kalenderdesigner_SS.Properties.Resources.open_file_icon;
+            this.tssBtnOpen.Image = global::CalendarDesigner.Properties.Resources.open_file_icon;
             this.tssBtnOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tssBtnOpen.Name = "tssBtnOpen";
             this.tssBtnOpen.Size = new System.Drawing.Size(23, 22);
-            this.tssBtnOpen.Text = Global.GetText("toolbarOpen");
+            this.tssBtnOpen.Text = text.Open;
             this.tssBtnOpen.Click += new System.EventHandler(this.tssBtnOpen_Click);
             // 
             // tssBtnSave
             // 
             this.tssBtnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tssBtnSave.Image = global::Kalenderdesigner_SS.Properties.Resources.save_icon;
+            this.tssBtnSave.Image = global::CalendarDesigner.Properties.Resources.save_icon;
             this.tssBtnSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tssBtnSave.Name = "tssBtnSave";
             this.tssBtnSave.Size = new System.Drawing.Size(23, 22);
-            this.tssBtnSave.Text = Global.GetText("toolbarSave");
+            this.tssBtnSave.Text = text.SaveAs;
             this.tssBtnSave.Click += new System.EventHandler(this.tssBtnSave_Click);
             // 
             // toolStripSeparator4
@@ -333,41 +321,41 @@ namespace Kalenderdesigner_SS
             // tssBtnEditCell
             // 
             this.tssBtnEditCell.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tssBtnEditCell.Image = global::Kalenderdesigner_SS.Properties.Resources.edit_icon;
+            this.tssBtnEditCell.Image = global::CalendarDesigner.Properties.Resources.edit_icon;
             this.tssBtnEditCell.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tssBtnEditCell.Name = "tssBtnEditCell";
             this.tssBtnEditCell.Size = new System.Drawing.Size(23, 22);
-            this.tssBtnEditCell.Text = Global.GetText("editCell");
+            this.tssBtnEditCell.Text = text.EditCell;
             this.tssBtnEditCell.Click += new System.EventHandler(this.tssBtnEditCell_Click);
             // 
             // tssBtnCopyCell
             // 
             this.tssBtnCopyCell.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tssBtnCopyCell.Image = global::Kalenderdesigner_SS.Properties.Resources.copy_icon;
+            this.tssBtnCopyCell.Image = global::CalendarDesigner.Properties.Resources.copy_icon;
             this.tssBtnCopyCell.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tssBtnCopyCell.Name = "tssBtnCopyCell";
             this.tssBtnCopyCell.Size = new System.Drawing.Size(23, 22);
-            this.tssBtnCopyCell.Text = Global.GetText("copyCell");
+            this.tssBtnCopyCell.Text = text.CopyPrev;
             this.tssBtnCopyCell.Click += new System.EventHandler(this.tssBtnCopyCell_Click);
             // 
             // tssBtnBigText
             // 
             this.tssBtnBigText.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tssBtnBigText.Image = global::Kalenderdesigner_SS.Properties.Resources.bigtext_icon;
+            this.tssBtnBigText.Image = global::CalendarDesigner.Properties.Resources.bigtext_icon;
             this.tssBtnBigText.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tssBtnBigText.Name = "tssBtnBigText";
             this.tssBtnBigText.Size = new System.Drawing.Size(23, 22);
-            this.tssBtnBigText.Text = Global.GetText("bigText");
+            this.tssBtnBigText.Text = text.BigText;
             this.tssBtnBigText.Click += new System.EventHandler(this.tssBtnBigText_Click);
             // 
             // tssBtnEditSubtext
             // 
             this.tssBtnEditSubtext.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tssBtnEditSubtext.Image = global::Kalenderdesigner_SS.Properties.Resources.edit_text_icon;
+            this.tssBtnEditSubtext.Image = global::CalendarDesigner.Properties.Resources.edit_text_icon;
             this.tssBtnEditSubtext.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tssBtnEditSubtext.Name = "tssBtnEditSubtext";
             this.tssBtnEditSubtext.Size = new System.Drawing.Size(23, 22);
-            this.tssBtnEditSubtext.Text = Global.GetText("editSubText");
+            this.tssBtnEditSubtext.Text = text.EditSubText;
             this.tssBtnEditSubtext.Click += new System.EventHandler(this.tssBtnEditSubtext_Click);
             // 
             // toolStripSeparator6
@@ -378,11 +366,11 @@ namespace Kalenderdesigner_SS
             // tssBtnSettings
             // 
             this.tssBtnSettings.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tssBtnSettings.Image = global::Kalenderdesigner_SS.Properties.Resources.settings_icons;
+            this.tssBtnSettings.Image = global::CalendarDesigner.Properties.Resources.settings_icons;
             this.tssBtnSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tssBtnSettings.Name = "tssBtnSettings";
             this.tssBtnSettings.Size = new System.Drawing.Size(23, 22);
-            this.tssBtnSettings.Text = Global.GetText("toolbarSettings");
+            this.tssBtnSettings.Text = text.Settings;
             this.tssBtnSettings.Click += new System.EventHandler(this.tssBtnSettings_Click);
             // 
             // Tips
@@ -411,7 +399,7 @@ namespace Kalenderdesigner_SS
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = Global.GetText("mainformHeader");
+            this.Text = text.CalendarDesigner;
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
