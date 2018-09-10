@@ -1,4 +1,4 @@
 # Calendar Designer
-Software for easily generating a monthly calendar with events, with functionality for exporting to .png and .jpg. Easy to add personalized fonts and logos.
+Software for easily generating a monthly calendar with daily events, with functionality for exporting to .png. Easy to add personalized fonts and logos.
 
-If you got any questions or thoughts about the software, reach out to me on Twitter [@TheLazara](https://twitter.com/TheLazara).
+If you got any questions or thoughts about the software, reach out to me at niklasgransjoen gmail com.
