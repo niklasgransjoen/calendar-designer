@@ -18,11 +18,6 @@ namespace Calendar_designer
     {
         public MainWindow()
         {
-            string resource1 = "Calendar_designer.Calendar_designer.resources.dll";
-            EmbeddedAssembly.Load(resource1, "Calendar_designer.resources.dll");
-
-            AppDomain.CurrentDomain.AssemblyResolve += new ResolveEventHandler(CurrentDomain_AssemblyResolve);
-
             Global.Preferences = Preferences.Read();
             InitializeComponent();
 
@@ -115,9 +110,5 @@ namespace Calendar_designer
                 e.Cancel = true;
         }
 
-        static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
-        {
-            return EmbeddedAssembly.Get(args.Name);
-        }
     }
 }
