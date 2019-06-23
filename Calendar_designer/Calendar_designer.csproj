@@ -80,7 +80,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Scripts\Functions.cs" />
+    <Compile Include="Classes\Calendar\Calendar.cs" />
+    <Compile Include="Classes\Calendar\Date.cs" />
+    <Compile Include="Classes\Calendar\Draw.cs" />
+    <Compile Include="Classes\Calendar\DrawBody.cs" />
+    <Compile Include="Classes\Calendar\DrawInfo.cs" />
+    <Compile Include="Classes\Calendar\Preferences.cs" />
+    <Compile Include="Classes\DrawClass.cs" />
+    <Compile Include="Classes\File\Export.cs" />
+    <Compile Include="Classes\File\File.cs" />
+    <Compile Include="Classes\Functions.cs" />
+    <Compile Include="Classes\Global.cs" />
+    <Compile Include="Classes\Mouse\Mouse.cs" />
+    <Compile Include="Classes\Mouse\MouseDown.cs" />
+    <Compile Include="Classes\Mouse\MouseMenu.cs" />
+    <Compile Include="Classes\Mouse\MouseMove.cs" />
+    <Compile Include="Classes\Mouse\MouseUp.cs" />
+    <Compile Include="Classes\Selection.cs" />
+    <Compile Include="Classes\Startup.cs" />
+    <Compile Include="Classes\Text.cs" />
     <Compile Include="Windows\SettingsWindow.xaml.cs">
       <DependentUpon>SettingsWindow.xaml</DependentUpon>
     </Compile>
@@ -104,24 +122,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>text.resx</DependentUpon>
     </Compile>
-    <Compile Include="Scripts\Calendar\Calendar.cs" />
-    <Compile Include="Scripts\Calendar\Date.cs" />
-    <Compile Include="Scripts\Calendar\Draw.cs" />
-    <Compile Include="Scripts\Calendar\DrawBody.cs" />
-    <Compile Include="Scripts\Calendar\DrawInfo.cs" />
-    <Compile Include="Scripts\Calendar\Preferences.cs" />
-    <Compile Include="Scripts\DrawClass.cs" />
-    <Compile Include="Scripts\File\Export.cs" />
-    <Compile Include="Scripts\File\File.cs" />
-    <Compile Include="Scripts\Global.cs" />
-    <Compile Include="Scripts\Mouse\Mouse.cs" />
-    <Compile Include="Scripts\Mouse\MouseDown.cs" />
-    <Compile Include="Scripts\Mouse\MouseMenu.cs" />
-    <Compile Include="Scripts\Mouse\MouseMove.cs" />
-    <Compile Include="Scripts\Mouse\MouseUp.cs" />
-    <Compile Include="Scripts\Selection.cs" />
-    <Compile Include="Scripts\Startup.cs" />
-    <Compile Include="Scripts\Text.cs" />
     <Compile Include="Windows\CellWindow.xaml.cs">
       <DependentUpon>CellWindow.xaml</DependentUpon>
     </Compile>

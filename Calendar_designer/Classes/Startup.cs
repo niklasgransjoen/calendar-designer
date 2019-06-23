@@ -15,14 +15,13 @@ namespace Calendar_designer
             string version = Global.Version;
             Global.MainWindow.Title = text.CalendarDesigner + " V" + version.Substring(0, version.IndexOf(".", version.IndexOf(".") + 1));
 
-            //Fill comboBoxes
-            int year;
             ComboBox boxMonth = Global.MainWindow.cmbMonth;
             ComboBox boxYear = Global.MainWindow.cmbYear;
 
             for (int i = 0; i < 5; i++)
             {
-                year = DateTime.Now.Year + i;
+                //Fill comboBoxes
+                int year = DateTime.Now.Year + i;
                 boxYear.Items.Add(year);
             }
 
