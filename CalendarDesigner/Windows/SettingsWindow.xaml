@@ -1,0 +1,118 @@
+﻿<Window x:Class="CalendarDesigner.Windows.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalendarDesigner.Properties"
+        mc:Ignorable="d"
+        Title="{x:Static local:text.Settings}" Height="350" Width="350" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner" Icon="pack://application:,,,/Resources/Icons/icon.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*" />
+            <ColumnDefinition Width="33*" />
+            <ColumnDefinition Width="33*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TabControl Margin="10,5" Grid.ColumnSpan="3">
+            <TabItem Header="{x:Static local:text.Events}">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <GroupBox Grid.Row="0" Grid.ColumnSpan="3">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40*" />
+                                <ColumnDefinition Width="30*" />
+                                <ColumnDefinition Width="30*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" VerticalAlignment="Center">
+                                <TextBlock>
+                                        <Run Text="{x:Static local:text.Line}" />
+                                        <Run Text="1" />
+                                </TextBlock>
+                            </Label>
+                            <RadioButton Content="{x:Static local:text.Black}" Grid.Column="1" VerticalAlignment="Center" Name="Line1Black" />
+                            <RadioButton Content="{x:Static local:text.Gray}" Grid.Column="2" VerticalAlignment="Center" Name="Line1Gray" />
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Grid.Row="1" Grid.ColumnSpan="3">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40*" />
+                                <ColumnDefinition Width="30*" />
+                                <ColumnDefinition Width="30*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" VerticalAlignment="Center">
+                                <TextBlock>
+                                        <Run Text="{x:Static local:text.Line}" />
+                                        <Run Text="2" />
+                                </TextBlock>
+                            </Label>
+                            <RadioButton Content="{x:Static local:text.Black}" Grid.Column="1" VerticalAlignment="Center" Name="Line2Black" />
+                            <RadioButton Content="{x:Static local:text.Gray}" Grid.Column="2" VerticalAlignment="Center" Name="Line2Gray" />
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Grid.Row="2" Grid.ColumnSpan="3">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40*" />
+                                <ColumnDefinition Width="30*" />
+                                <ColumnDefinition Width="30*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" VerticalAlignment="Center">
+                                <TextBlock>
+                                        <Run Text="{x:Static local:text.Line}" />
+                                        <Run Text="3" />
+                                </TextBlock>
+                            </Label>
+                            <RadioButton Content="{x:Static local:text.Black}" Grid.Column="1" VerticalAlignment="Center" Name="Line3Black" />
+                            <RadioButton Content="{x:Static local:text.Gray}" Grid.Column="2" VerticalAlignment="Center" Name="Line3Gray" />
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Grid.Row="3" Grid.ColumnSpan="3">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50*" />
+                                <RowDefinition Height="50*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40*" />
+                                <ColumnDefinition Width="60*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Content="{x:Static local:text.UseSettings}" VerticalAlignment="Center" />
+                            <RadioButton Content="{x:Static local:text.Always}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" IsChecked="True" Name="UseAlways" />
+                            <RadioButton Content="{x:Static local:text.NAlways}" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Name="NotUseAlways" />
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="{x:Static local:text.Language}">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30*" />
+                        <ColumnDefinition Width="70*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Content="{x:Static local:text.Language}" Grid.Column="0" />
+                    <ComboBox Margin="10,5" Grid.Column="1" Name="Language">
+                        <ComboBoxItem Content="{x:Static local:text.Norwegian}" />
+                        <ComboBoxItem Content="{x:Static local:text.English}" />
+                    </ComboBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Content="{x:Static local:text.btnConfirm}" Margin="10,5" Grid.Row="1" Grid.Column="1" IsDefault="true" Click="Confirm_Click" />
+        <Button Content="{x:Static local:text.btnCancel}" Margin="10,5" Grid.Row="1" Grid.Column="2" IsCancel="true" />
+    </Grid>
+</Window>
