@@ -58,11 +58,6 @@ namespace Calendar_designer
         private static List<UIElement> Events { get; set; }
 
         /// <summary>
-        /// Gets or sets the author info.
-        /// </summary>
-        private static TextBlock AuthorInfo { get; set; }
-
-        /// <summary>
         /// Draws the info of the calendar.
         /// </summary>
         public static void _Draw()
@@ -74,7 +69,6 @@ namespace Calendar_designer
             Draw.Add(WeekNumbers);
             Draw.Add(Dates);
             Draw.Add(Events);
-            Draw.Add(AuthorInfo);
         }
 
         /// <summary>
@@ -87,7 +81,6 @@ namespace Calendar_designer
             BaseSetup();
             SubtextSetup();
             EventSetup();
-            AuthorSetup();
         }
 
         /// <summary>
@@ -382,27 +375,6 @@ namespace Calendar_designer
                 double divider = Math.Ceiling(1 + (lines * DrawClass.FontSize) / (double)DrawClass.CellHeight + margin);
                 txtEvent.FontSize /= divider;
             }
-        }
-
-        /// <summary>
-        /// Sets up the author info.
-        /// </summary>
-        private static void AuthorSetup()
-        {
-            string text = Text.AuthorInfo1 + "\n" + Text.AuthorInfo2;
-
-            AuthorInfo = new TextBlock
-            {
-                Text = text,
-                FontFamily = Font,
-                FontSize = DrawClass.FontSizeAuthor,
-                TextAlignment = TextAlignment.Right
-            };
-
-            Point point = Global.Calendar.Dates.Last().BotRight;
-            int textWidth = (int)DrawClass.MeasureString(text, Font, DrawClass.FontSizeAuthor).Width;
-
-            Draw.Position(AuthorInfo, point.X - textWidth, point.Y);
         }
     }
 }

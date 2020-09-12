@@ -17,8 +17,5 @@ namespace Calendar_designer
         public const string BusinessInfo2 = "+47 91 24 36 05";
         public const string BusinessInfo3 = "post@solveigsstue.no";
         public const string BusinessInfo4 = "https://solveigsstue.no";
-
-        public const string AuthorInfo1 = "Design av Niklas Gransjøen";
-        public const string AuthorInfo2 = "niklasgransjoen@gmail.com";
     }
 }
